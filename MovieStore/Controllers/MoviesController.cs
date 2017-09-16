@@ -33,6 +33,12 @@ namespace MovieStore.Controllers
             return Content("id=" + id);
         }
 
+        //http://localhost:49690/movies/released/2015/4
+        public ActionResult ByReleaseDate(int year, int month)
+        {
+            return Content(year + "/" + month);
+        }
+
 
     }
 }
