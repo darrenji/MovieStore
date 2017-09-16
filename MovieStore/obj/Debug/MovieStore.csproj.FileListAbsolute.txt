@@ -89,3 +89,5 @@ D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.pdb
 D:\demos\NET\MovieStore\MovieStore\bin\roslyn\.gitignore
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.InitialModel.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.csproj.GenerateResource.Cache
+D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddIsSubscribedToCustomer.resources
+D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddMembershipType.resources
