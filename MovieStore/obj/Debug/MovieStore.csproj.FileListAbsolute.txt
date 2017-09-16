@@ -91,3 +91,4 @@ D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.InitialModel.
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.csproj.GenerateResource.Cache
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddIsSubscribedToCustomer.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddMembershipType.resources
+D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.PopulateMembershipTypes.resources
