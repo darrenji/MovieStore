@@ -92,3 +92,4 @@ D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.csproj.GenerateResource.
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddIsSubscribedToCustomer.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddMembershipType.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.PopulateMembershipTypes.resources
+D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.ApplyAnnotationsToCustomerName.resources
