@@ -10,9 +10,13 @@ namespace MovieStore.Controllers
     public class MoviesController : Controller
     {
         // GET: Movies
-        public ActionResult Index()
+        public ActionResult Index(int? pageIndex, string sortBy)
         {
-            return View();
+            if (!pageIndex.HasValue)
+                pageIndex = 1;
+            if (string.IsNullOrWhiteSpace(sortBy))
+                sortBy = "Name";
+            return Content($"pageIndex={pageIndex},sortBy={sortBy}");
         }
 
         public ActionResult Random()
@@ -20,5 +24,15 @@ namespace MovieStore.Controllers
             var movie = new Movie { Name="darren"};
             return View(movie);
         }
+
+        //movies/edit/1
+        //movies/edit?id=1
+        //movies/edit?movieId=1
+        public ActionResult Edit(int id)
+        {
+            return Content("id=" + id);
+        }
+
+
     }
 }

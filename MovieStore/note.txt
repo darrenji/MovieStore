@@ -1,1 +1,8 @@
-﻿ActionResult: ViewResult,PartialViewResult,ContentResult, RedirectResult, RedirectToRouteResult, JosnResult, FileResult,HttpNotFoundResult,Emptry Result
+﻿1.ActionResult: ViewResult,PartialViewResult,ContentResult, RedirectResult, RedirectToRouteResult, JosnResult, FileResult,HttpNotFoundResult,Emptry Result
+
+2. Action Parameters:
+
+2.1 Action参数的来源：
+url: /movies/edit/1
+query string: /movies/edit?id=1
+form data:
