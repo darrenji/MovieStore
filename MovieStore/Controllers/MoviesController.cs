@@ -1,4 +1,5 @@
 ﻿using MovieStore.Models;
+using MovieStore.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,10 +24,21 @@ namespace MovieStore.Controllers
         {
             var movie = new Movie { Name="darren"};
 
+            var customers = new List<Customer> {
+                new Customer {Name="customer1" },
+                new Customer {Name="customer2" }
+            };
+
+            var viewModel = new RandomMovieViewModel {
+                Movie = movie,
+                Customers = customers
+            };
+
             //等同于
             //var viewReslut = new ViewResult();
             //viewReslut.ViewData.Model = movie;
-            return View(movie);
+
+            return View(viewModel);
         }
 
         //movies/edit/1
