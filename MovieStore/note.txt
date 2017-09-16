@@ -1,0 +1,1 @@
+﻿ActionResult: ViewResult,PartialViewResult,ContentResult, RedirectResult, RedirectToRouteResult, JosnResult, FileResult,HttpNotFoundResult,Emptry Result
