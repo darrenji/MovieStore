@@ -5,4 +5,11 @@
 2.1 Action参数的来源：
 url: /movies/edit/1
 query string: /movies/edit?id=1
-form data:
+form data
+
+3. code firt migration:
+
+enable-migrations
+add-migration sth
+add-migration sth -force 
+update-database
