@@ -22,6 +22,10 @@ namespace MovieStore.Controllers
         public ActionResult Random()
         {
             var movie = new Movie { Name="darren"};
+
+            //等同于
+            //var viewReslut = new ViewResult();
+            //viewReslut.ViewData.Model = movie;
             return View(movie);
         }
 
