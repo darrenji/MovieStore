@@ -86,3 +86,4 @@ D:\demos\NET\MovieStore\MovieStore\bin\zh-Hans\Microsoft.Owin.Security.Microsoft
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.csprojResolveAssemblyReference.cache
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.dll
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.pdb
+D:\demos\NET\MovieStore\MovieStore\bin\roslyn\.gitignore
