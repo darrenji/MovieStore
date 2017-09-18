@@ -98,3 +98,4 @@ D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddBirthDateT
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddGenreTable.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddMovieTable.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddMembershipTypesTable.resources
+D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.ChangeMembershipTypeTable.resources
