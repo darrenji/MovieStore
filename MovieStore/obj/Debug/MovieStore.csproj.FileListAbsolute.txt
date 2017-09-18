@@ -94,3 +94,4 @@ D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddMembership
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.PopulateMembershipTypes.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.ApplyAnnotationsToCustomerName.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddNameToMembershipType.resources
+D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddBirthDateToCustomer.resources
