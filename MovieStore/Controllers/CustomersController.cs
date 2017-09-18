@@ -37,6 +37,7 @@ namespace MovieStore.Controllers
 
         // 可能是创建，可能是保存
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(Customer customer)
         {
             if(!ModelState.IsValid)
