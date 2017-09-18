@@ -12,7 +12,7 @@ namespace MovieStore.Models
         {
             var customer = (Customer)validationContext.ObjectInstance;
 
-            if(customer.MembershipTypeId == 1)
+            if(customer.MembershipTypeId == MembershipType.Unkonw || customer.MembershipTypeId==MembershipType.PayAsYouGo)
             {
                 return ValidationResult.Success;
             }
