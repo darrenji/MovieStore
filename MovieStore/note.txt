@@ -17,3 +17,14 @@ update-database
 4. ef捕获异常
 
 DbEntityValidationException
+
+5. Data Annotations
+
+[Required]
+[StringLength(255)]
+[Range(1,10)]
+[Compare("OtherProperty")]
+[Phone]
+[EmailAddress]
+[Url]
+[ReguklarExpression]
