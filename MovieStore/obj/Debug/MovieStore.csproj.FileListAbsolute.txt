@@ -95,3 +95,4 @@ D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.PopulateMembe
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.ApplyAnnotationsToCustomerName.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddNameToMembershipType.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddBirthDateToCustomer.resources
+D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddGenreTable.resources
