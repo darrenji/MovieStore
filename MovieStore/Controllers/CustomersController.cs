@@ -23,6 +23,7 @@ namespace MovieStore.Controllers
             _context.Dispose();
         }
 
+        //创建，从这里传给视图
         public ActionResult New()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
@@ -32,6 +33,45 @@ namespace MovieStore.Controllers
             };
             return View(viewModel);
         }
+
+        // 可能是创建，可能是保存
+        [HttpPost]
+        public ActionResult Create(Customer customer)
+        {
+            if(customer.Id == 0)
+            {
+                _context.Customers.Add(customer);
+            }
+            else
+            {
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+
+                customerInDb.Name = customer.Name;
+                customerInDb.BirthDate = customer.BirthDate;
+                customerInDb.MembershipTypeId = customer.MembershipTypeId;
+                customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
+            }
+            
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Customers");
+        }
+
+        //编辑，从这里传给视图
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+            if (customer == null) return HttpNotFound();
+
+            var viewModel = new NewCustomerViewModel
+            {
+                Customer = customer,
+                MembershipTypes = _context.MembershipTypes.ToList()
+            };
+            return View("New", viewModel);
+        }
+
+
 
         // GET: Customers
         public ActionResult Index()

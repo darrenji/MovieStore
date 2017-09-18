@@ -13,3 +13,7 @@ enable-migrations
 add-migration sth
 add-migration sth -force 
 update-database
+
+4. ef捕获异常
+
+DbEntityValidationException
