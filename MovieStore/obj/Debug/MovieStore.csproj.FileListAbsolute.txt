@@ -100,3 +100,9 @@ D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddMovieTable
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddMembershipTypesTable.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.ChangeMembershipTypeTable.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.SomeChangesInMovieTable.resources
+D:\demos\NET\MovieStore\MovieStore\bin\System.Net.Http.Formatting.dll
+D:\demos\NET\MovieStore\MovieStore\bin\System.Web.Http.dll
+D:\demos\NET\MovieStore\MovieStore\bin\System.Web.Http.WebHost.dll
+D:\demos\NET\MovieStore\MovieStore\bin\System.Net.Http.Formatting.xml
+D:\demos\NET\MovieStore\MovieStore\bin\System.Web.Http.xml
+D:\demos\NET\MovieStore\MovieStore\bin\System.Web.Http.WebHost.xml
