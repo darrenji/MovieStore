@@ -106,3 +106,5 @@ D:\demos\NET\MovieStore\MovieStore\bin\System.Web.Http.WebHost.dll
 D:\demos\NET\MovieStore\MovieStore\bin\System.Net.Http.Formatting.xml
 D:\demos\NET\MovieStore\MovieStore\bin\System.Web.Http.xml
 D:\demos\NET\MovieStore\MovieStore\bin\System.Web.Http.WebHost.xml
+D:\demos\NET\MovieStore\MovieStore\bin\AutoMapper.dll
+D:\demos\NET\MovieStore\MovieStore\bin\AutoMapper.xml
