@@ -48,15 +48,19 @@ else
             $("#customers .js-delete").on("click", function () {
                 var button = $(this);
 
-                if (confirm("are you sure?")) {
-                    $.ajax({
-                        url: "/api/customers/" + button.attr("data-customer-id"),
-                        method: "DELETE",
-                        success: function () {
-                            button.parents("tr").remove();
-                        }
-                    });
-                }
+                bootbox.confirm("are you sure?", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/api/customers/" + button.attr("data-customer-id"),
+                            method: "DELETE",
+                            success: function () {
+                                button.parents("tr").remove();
+                            }
+                        });
+                    }
+                });
+
+                
             });
         });
     </script>
