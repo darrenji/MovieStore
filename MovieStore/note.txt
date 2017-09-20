@@ -29,5 +29,17 @@ DbEntityValidationException
 [Url]
 [ReguklarExpression]
 
+6. 有关登录
 
+Microsoft.AspNet.Identity.Core
+Microsoft.AspNet.Identity.EntityFramework
+Microsoft.AspNet.Identity.Owin
+
+包括Domain:比如IdentityUser;
+包括API/Service:比如UserManager, RoleManager, SignInManager；
+包括持久层：比如UserStore, RoleStore，使用entity framework,IdentityDbContext接口
+
+
+[Authorize]
+[AllowAnonymous]
 

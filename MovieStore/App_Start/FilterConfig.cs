@@ -8,6 +8,9 @@ namespace MovieStore
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+
+            //在全局添加验证
+            filters.Add(new AuthorizeAttribute());
         }
     }
 }
