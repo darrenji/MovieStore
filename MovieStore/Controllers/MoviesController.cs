@@ -75,8 +75,9 @@ namespace MovieStore.Controllers
 
         public ActionResult Index()
         {
-            var movies = _context.Movies.Include(m => m.Genre);
-            return View(movies);
+            //var movies = _context.Movies.Include(m => m.Genre);
+            //return View(movies);
+            return View();
         }
         
         //创建
