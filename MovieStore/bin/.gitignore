@@ -1,2 +1,6 @@
 /Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 /Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+/Glimpse.AspNet.dll
+/Glimpse.Core.dll
+/Glimpse.EF6.dll
+/Glimpse.Mvc5.dll

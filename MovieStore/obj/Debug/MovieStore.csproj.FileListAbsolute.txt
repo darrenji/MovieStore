@@ -111,3 +111,8 @@ D:\demos\NET\MovieStore\MovieStore\bin\AutoMapper.xml
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.SeedUsers.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddDrivingLicenseToApplicationUser.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddPhoneToIdentity.resources
+D:\demos\NET\MovieStore\MovieStore\bin\Glimpse.Ado.dll
+D:\demos\NET\MovieStore\MovieStore\bin\Glimpse.AspNet.dll
+D:\demos\NET\MovieStore\MovieStore\bin\Glimpse.Core.dll
+D:\demos\NET\MovieStore\MovieStore\bin\Glimpse.EF6.dll
+D:\demos\NET\MovieStore\MovieStore\bin\Glimpse.Mvc5.dll
