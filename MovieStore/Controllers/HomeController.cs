@@ -6,8 +6,11 @@ using System.Web.Mvc;
 
 namespace MovieStore.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
+        //[OutputCache(Duration =30, Location = System.Web.UI.OutputCacheLocation.Server, VaryByParam ="*")
+        //[OutputCache(Duration =0, VaryByParam ="*", NoStore =true)]
         public ActionResult Index()
         {
             return View();
