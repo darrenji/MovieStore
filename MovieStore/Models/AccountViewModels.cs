@@ -8,6 +8,10 @@ namespace MovieStore.Models
         [Required]
         [Display(Name = "电子邮件")]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "Driving License")]
+        public string DrivingLicense { get; set; }
     }
 
     public class ExternalLoginListViewModel

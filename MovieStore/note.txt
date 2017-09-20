@@ -43,3 +43,28 @@ Microsoft.AspNet.Identity.Owin
 [Authorize]
 [AllowAnonymous]
 
+7. Auth
+
+7.1 facebook给到我们一个api key和secret
+7.2 用户点击登录按钮
+7.3 我们把用户导向到facebook,并且带着api key和secret,这里用Https通讯安全
+7.4 用户在facebook的界面输入用户名和密码登录
+7.5 facebook再把用户导向到我们的界面，facebook会给到我们一个authorization token
+7.6 我们把authorization token, api key and secret给facebook,意思是向facebook认证token是否是facebook发的
+7.7 facebook说，你发给我的authorization token和我发给用户的一致，这样吧，我再给你一个access token
+7.8 我们拿着这个access token获取用户的某些信息
+
+
+网站APP需要支持SSL；我们的APP在Facebook上注册。
+
+具体操作：
+
+1. 启用ssl,有些是在.vs文件夹下
+2. 网站属性，web中设置ssl地址和端口
+3. 运行，会有弹出窗口提示安装证书，点击是
+4. 来到https页面
+5. facebook developer中创建应用
+6. 控制面板。App ID:266475867198050      App Secret: 
+7. 来到项目Startup.Auth.cs文件，找到facebook部分
+
+
