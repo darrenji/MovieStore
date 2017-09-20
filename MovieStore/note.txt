@@ -57,9 +57,11 @@ Microsoft.AspNet.Identity.Owin
 
 网站APP需要支持SSL；我们的APP在Facebook上注册。
 
+
+
 具体操作：
 
-1. 启用ssl,有些是在.vs文件夹下
+1. 启用ssl,有些是在.vs文件夹下: <binding protocol="https" bindingInformation="*:44300:localhost" />
 2. 网站属性，web中设置ssl地址和端口
 3. 运行，会有弹出窗口提示安装证书，点击是
 4. 来到https页面

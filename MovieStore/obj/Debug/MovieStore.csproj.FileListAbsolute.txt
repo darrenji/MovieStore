@@ -110,3 +110,4 @@ D:\demos\NET\MovieStore\MovieStore\bin\AutoMapper.dll
 D:\demos\NET\MovieStore\MovieStore\bin\AutoMapper.xml
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.SeedUsers.resources
 D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddDrivingLicenseToApplicationUser.resources
+D:\demos\NET\MovieStore\MovieStore\obj\Debug\MovieStore.Migrations.AddPhoneToIdentity.resources

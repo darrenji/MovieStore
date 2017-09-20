@@ -12,6 +12,10 @@ namespace MovieStore.Models
         [Required]
         [Display(Name = "Driving License")]
         public string DrivingLicense { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Phone { get; set; }
     }
 
     public class ExternalLoginListViewModel
@@ -89,6 +93,10 @@ namespace MovieStore.Models
         [Display(Name = "确认密码")]
         [Compare("Password", ErrorMessage = "密码和确认密码不匹配。")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Phone { get; set; }
     }
 
     public class ResetPasswordViewModel

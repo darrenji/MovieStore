@@ -13,7 +13,7 @@ namespace MovieStore
             filters.Add(new AuthorizeAttribute());
 
             //以下强制在https下运行
-            filters.Add(new RequireHttpsAttribute());
+            //filters.Add(new RequireHttpsAttribute());
         }
     }
 }

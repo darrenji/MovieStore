@@ -13,6 +13,10 @@ namespace MovieStore.Models
         [Required]
         [StringLength(255)]
         public string DrivingLicense { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Phone { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // 请注意，authenticationType 必须与 CookieAuthenticationOptions.AuthenticationType 中定义的相应项匹配
