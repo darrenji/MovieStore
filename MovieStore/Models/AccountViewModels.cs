@@ -48,6 +48,8 @@ namespace MovieStore.Models
 
     public class LoginViewModel
     {
+        
+
         [Required]
         [Display(Name = "电子邮件")]
         [EmailAddress]
@@ -64,6 +66,10 @@ namespace MovieStore.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "Driving License")]
+        public string DrivingLicense { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "电子邮件")]
