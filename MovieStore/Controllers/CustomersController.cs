@@ -92,6 +92,15 @@ namespace MovieStore.Controllers
 
             //return View(customers);
 
+            #region data cache
+            //if(MemoryCache.Default["Genres"] == null)
+            //{
+            //    MemoryCache.Default["Genres"] = _context.Genres.ToList();
+            //}
+
+            //var genres = MemoryCache.Default["Genures"] as IEnumerable<Genre>;
+            #endregion
+
             return View();
         }
 
