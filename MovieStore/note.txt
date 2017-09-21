@@ -73,3 +73,9 @@ Microsoft.AspNet.Identity.Owin
 
 请求过来，runtime分配一个线程处理请求，比如要对数据库做一次查询，线程就会等待数据库返回结果，如果有很多请求进来，可能会出现线程不够用的情况，此时，我们可以加更多的设备，即有了更多的内存，即有了更多的线程。还有一种方法是使用async,aysnc没有提供性能，而是improve scalability,特别是使用nosql数据库的时候。
 
+9. Debug和Release
+
+开发的时候默认是Debug模式，会在程序集中加入一些信息，发布的时候，使用Release模式，会有一些自动优化的地方。
+
+
+
