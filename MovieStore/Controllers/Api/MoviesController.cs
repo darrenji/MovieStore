@@ -20,12 +20,24 @@ namespace MovieStore.Controllers.Api
             _context = new ApplicationDbContext();
         }
 
-        public IEnumerable<MovieDto> GetMovies()
+        public IEnumerable<MovieDto> GetMovies(string query = null)
         {
-            return _context.Movies
+            //第一次的写法
+            //return _context.Movies
+            //    .Include(m => m.Genre)
+            //    .ToList()
+            //    .Select(Mapper.Map<Movie, MovieDto>);
+
+            var movieQury = _context.Movies
                 .Include(m => m.Genre)
-                .ToList()
+                .Where(m => m.NumberAvailable > 0);
+
+            if (!string.IsNullOrEmpty(query))
+                movieQury = movieQury.Where(m => m.Name.Contains(query));
+
+            return movieQury.ToList()
                 .Select(Mapper.Map<Movie, MovieDto>);
+
         }
 
         public IHttpActionResult GetMovie(int id)

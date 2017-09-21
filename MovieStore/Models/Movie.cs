@@ -22,6 +22,8 @@ namespace MovieStore.Models
         [Range(1,200)]
         public int NumberInStock { get; set; }
 
+        public int NumberAvailable { get; set; }
+
         [Display(Name="Genre")]
         [Required]
         public int GenreId { get; set; }

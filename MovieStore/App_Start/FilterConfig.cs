@@ -10,7 +10,7 @@ namespace MovieStore
             filters.Add(new HandleErrorAttribute());
 
             //在全局添加验证
-            filters.Add(new AuthorizeAttribute());
+            //filters.Add(new AuthorizeAttribute());
 
             //以下强制在https下运行
             //filters.Add(new RequireHttpsAttribute());
