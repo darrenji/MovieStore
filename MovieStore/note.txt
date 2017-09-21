@@ -81,3 +81,41 @@ Microsoft.AspNet.Identity.Owin
 
 session是在服务器上的一块内存空间，用来分配给用户。但是session kills scalability,发展到现在，一般不需要state,不需要session, 
 
+11. deploy database
+
+update-database -script -SourceMigration:SeedUsers
+
+12. custom configuration 
+
+web.config可以添加新的配置，在新的配置文件中设置远程数据库的信息，发布的时候，选择新添加的配置。
+
+13. custom application setting
+
+13.1 在web.config的appSetting节点可以设置。也可以放到新的配置文件中。
+
+13.2 然后在需要用到的地方使用ConfigurationManager来设置。
+
+ConfigurationManager.AppSettings["FacebookAppId"]
+
+14. securing configuration settings
+
+14.1 把显式设置放到根目录下的某个配置文件中，比如some.webconfig
+14.2 打开开发人员命令提示：aspnet_regiis -pef "appSettings" "c:\deploy" -prov "DataProtectionConfigurationProvider"
+14.3 只能放到加密的设备上解密：aspnet_regiis -pdf "appSettings" "c:\deploy" 
+
+15. 错误页
+
+当来到一个不存在的路由，或者一个静态文件，或者return HttpNotFound()的地方，就会抛出IIS给的一个错误页面。
+
+  <system.web>
+    <!--自定义错误页-->
+    <customErrors mode="On">
+      <error statusCode="404" redirect="~/404.html"/>
+    </customErrors>
+
+  <system.webServer>
+    <!--设置IIS如何处理错误页-->
+    <httpErrors errorMode="Custom">
+      <remove statusCode="404"/>
+      <error statusCode="404" path="404.html" responseMode="File"/>
+    </httpErrors> 
