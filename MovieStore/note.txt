@@ -77,5 +77,7 @@ Microsoft.AspNet.Identity.Owin
 
 开发的时候默认是Debug模式，会在程序集中加入一些信息，发布的时候，使用Release模式，会有一些自动优化的地方。
 
+10. session
 
+session是在服务器上的一块内存空间，用来分配给用户。但是session kills scalability,发展到现在，一般不需要state,不需要session, 
 
